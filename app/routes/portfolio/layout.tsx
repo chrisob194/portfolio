@@ -16,7 +16,7 @@ export default function PortfolioLayout() {
       <PortfolioLayoutSide />
       <div className="flex flex-col w-full px-20">
         <Navbar title="Christian" menuItems={menuItems} />
-        <main>
+        <main className="grow px-10 py-10">
           <Outlet />
         </main>
       </div>
