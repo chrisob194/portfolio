@@ -8,15 +8,10 @@ export default function Home() {
           <Intro />
         </div>
         <div className="flex-1">
-          <img src="https://www.training.com.au/wp-content/uploads/Full-Stack-Developer-1.jpeg" />
+          <Picture />
         </div>
       </div>
-      <div className="grow flex flex-col items-center justify-center">
-        <blockquote className="border-l-4 border-lime-400 p-4 text-slate-600 italic text-xl">
-          "The only limit to our realization of tomorrow is our doubts of today."
-          <cite className="block text-right text-gray-500 mt-2">- Franklin D. Roosevelt</cite>
-        </blockquote>
-      </div>
+      <Quote />
     </div>
   )
 }
@@ -31,4 +26,21 @@ function Intro() {
       </NavLink>
     </div>
   )
+}
+
+function Picture() {
+  return (
+    <img src="https://www.training.com.au/wp-content/uploads/Full-Stack-Developer-1.jpeg" />
+  );
+}
+
+function Quote() {
+  return (
+    <div className="grow flex flex-col items-center justify-center">
+      <blockquote className="border-l-4 border-lime-400 p-4 text-slate-600 italic text-xl">
+        "The only limit to our realization of tomorrow is our doubts of today."
+        <cite className="block text-right text-gray-500 mt-2">- Franklin D. Roosevelt</cite>
+      </blockquote>
+    </div>
+  );
 }
