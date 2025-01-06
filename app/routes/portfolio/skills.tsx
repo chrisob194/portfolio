@@ -1,5 +1,4 @@
 import SectionTitle from './shared/sectionTitle';
-import { logos } from '../../assets/logos';
 
 /* TODO how to model:
 * flat table skills
